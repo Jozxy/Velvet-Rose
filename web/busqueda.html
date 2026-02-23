@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velvet&Rose - Búsqueda</title>
+  <link rel="stylesheet" href="../assets/Styles.css" />
+  <link rel="icon" href="../imgs/logo.jpeg" type="logo">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="quienes-somos.html">Quiénes somos</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="carrito.html">Carrito (<span id="cartCount">0</span>)</a></li>
+      <li><a href="busqueda.html">Búsqueda</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Búsqueda de productos</h1>
+
+    <form id="formBusqueda">
+      <input type="text" id="campoBusqueda" placeholder="Ej: blusa, vestido, pantalón..." required />
+      <button type="submit">Buscar</button>
+    </form>
+
+    <!-- Área de resultados, se llena con JavaScript -->
+    <div id="resultados" style="display:none;">
+      <p id="textoBusqueda"></p>
+      <div id="listaResultados" class="productos"></div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Velvet & Rose — Todos los derechos reservados</p>
+  </footer>
+
+  <script src="../assets/Script.js"></script>
+</body>
+</html>
