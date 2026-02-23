@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velvet&Rose - Carrito</title>
+  <link rel="stylesheet" href="../assets/Styles.css" />
+  <link rel="icon" href="../imgs/logo.jpeg" type="logo">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="quienes-somos.html">Quiénes somos</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="carrito.html">Carrito (<span id="cartCount">0</span>)</a></li>
+      <li><a href="busqueda.html">Búsqueda</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Tu carrito de compras</h1>
+
+    <div class="carrito-layout">
+
+      <!-- Tabla de productos (se llena con JavaScript) -->
+      <div class="carrito-tabla-wrap">
+
+        <table id="carritoTable">
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Precio unitario</th>
+              <th>Cantidad</th>
+              <th>Subtotal</th>
+              <th>Eliminar</th>
+            </tr>
+          </thead>
+          <tbody id="carritoBody">
+            <!-- Las filas se generan con JavaScript al cargar la página -->
+          </tbody>
+        </table>
+
+        <!-- Se muestra solo cuando el carrito está vacío -->
+        <p id="carritoVacio" style="display:none;">
+          🛒 Tu carrito está vacío. <a href="catalogo.html">Ir al catálogo</a>
+        </p>
+
+      </div>
+
+      <!-- Resumen lateral -->
+      <aside class="carrito-resumen">
+        <h2>Resumen del pedido</h2>
+
+        <div class="resumen-fila">
+          <span>Subtotal:</span>
+          <span id="subtotalVal">$0</span>
+        </div>
+        <div class="resumen-fila">
+          <span>Envío:</span>
+          <span id="envioVal">Gratis</span>
+        </div>
+        <div class="resumen-fila resumen-total">
+          <span>Total:</span>
+          <span id="totalVal">$0</span>
+        </div>
+
+        <button id="btnPago">Proceder al pago</button>
+        <a href="catalogo.html" class="btn-seguir">Seguir comprando</a>
+
+        <div class="carrito-badges">
+          <p>🔒 Pago seguro</p>
+          <p>🚚 Envío gratis en compras +$500</p>
+          <p>↩️ Devolución en 30 días</p>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Velvet & Rose — Todos los derechos reservados</p>
+  </footer>
+
+  <script src="../assets/Script.js"></script>
+</body>
+</html>
